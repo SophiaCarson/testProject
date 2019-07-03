@@ -51,47 +51,47 @@
 
 
     <tx:annotation-driven transaction-manager="transactionManager" />
-    <!-- MyBatis整合配置 end -->
+    <!--&lt;!&ndash; MyBatis整合配置 end &ndash;&gt;-->
 
-       <!-- 定义ToRegistAction -->
-       <bean id="toRegistAction"
-             class="com.htgy.actions.ToRegistAction">
-       </bean>
-       <!-- 定义ToLoginAction -->
-       <bean id="toLoginAction"
-             class="actions.ToLoginAction">
-       </bean>
+       <!--&lt;!&ndash; 定义ToRegistAction &ndash;&gt;-->
+       <!--<bean id="toRegistAction"-->
+             <!--class="com.htgy.com.spring.mvc.actions.ToRegistAction">-->
+       <!--</bean>-->
+       <!--&lt;!&ndash; 定义ToLoginAction &ndash;&gt;-->
+       <!--<bean id="toLoginAction"-->
+             <!--class="com.spring.mvc.actions.ToLoginAction">-->
+       <!--</bean>-->
 
 
-       <bean id="loginAction"
-             class="actions.LoginAction">
-              <property name="commandClass">
-                     <value>forms.LoginForm</value>
-              </property>
+       <!--<bean id="loginAction"-->
+             <!--class="com.spring.mvc.actions.LoginAction">-->
+              <!--<property name="commandClass">-->
+                     <!--<value>com.spring.mvc.forms.LoginForm</value>-->
+              <!--</property>-->
 
-              <property name="lFailView">
-                     <value>pages.loginFail</value>
-              </property>
+              <!--<property name="lFailView">-->
+                     <!--<value>pages.loginFail</value>-->
+              <!--</property>-->
 
-              <property name="lSuccessView">
-                     <value>loginSuccess</value>
-              </property>
-       </bean>
+              <!--<property name="lSuccessView">-->
+                     <!--<value>loginSuccess</value>-->
+              <!--</property>-->
+       <!--</bean>-->
 
-       <!-- 定义RegistAction -->
-       <bean id="registAction"
-             class="com.htgy.actions.RegistAction">
-              <property name="commandClass">
-                     <value>com.htgy.registform.RegistForm</value>
-              </property>
+       <!--&lt;!&ndash; 定义RegistAction &ndash;&gt;-->
+       <!--<bean id="registAction"-->
+             <!--class="com.htgy.com.spring.mvc.actions.RegistAction">-->
+              <!--<property name="commandClass">-->
+                     <!--<value>com.htgy.registform.RegistForm</value>-->
+              <!--</property>-->
 
-              <property name="rSuccessView">
-                     <value>registSuccess</value>
-              </property>
+              <!--<property name="rSuccessView">-->
+                     <!--<value>registSuccess</value>-->
+              <!--</property>-->
 
-              <property name="rFailView">
-                     <value>registFail</value>
-              </property>
-       </bean>
+              <!--<property name="rFailView">-->
+                     <!--<value>registFail</value>-->
+              <!--</property>-->
+       <!--</bean>-->
 
 </beans>

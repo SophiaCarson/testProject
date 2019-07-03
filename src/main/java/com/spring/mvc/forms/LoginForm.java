@@ -1,4 +1,4 @@
-package forms;
+package com.spring.mvc.forms;
 
 public class LoginForm {
     private String account;

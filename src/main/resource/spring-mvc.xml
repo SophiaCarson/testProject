@@ -15,7 +15,7 @@
     <mvc:view-controller path="/" view-name="redirect:/index/index"/>
 
     <!-- 自动扫描的包名 ，使Spring支持自动检测组件，如注解的Controller-->
-    <context:component-scan base-package="com.spring.mvc"/>
+    <context:component-scan base-package="com.spring.mvc.controller"/>
 
     <!-- 视图解析器:定义跳转的文件的前后缀 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -23,17 +23,17 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean id="loginMapping"
-          class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
-        <property name="mappings">
-            <props>
-                <prop key="doLogin">loginAction</prop>
-                <prop key="doRegist">registAction</prop>
-                <prop key="toRegist">toRegistAction</prop>
-                <prop key="toLogin">toLoginAction</prop>
-            </props>
-        </property>
-    </bean>
+    <!--<bean id="loginMapping"-->
+          <!--class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">-->
+        <!--<property name="mappings">-->
+            <!--<props>-->
+                <!--<prop key="doLogin">loginAction</prop>-->
+                <!--<prop key="doRegist">registAction</prop>-->
+                <!--<prop key="toRegist">toRegistAction</prop>-->
+                <!--<prop key="toLogin">toLoginAction</prop>-->
+            <!--</props>-->
+        <!--</property>-->
+    <!--</bean>-->
 
 </beans>
 

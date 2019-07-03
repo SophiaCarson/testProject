@@ -11,6 +11,15 @@
     <title>Title</title>
 </head>
 <body>
+<form action="ToLoginController" method="post">
+    <table>
 
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="登录">
+            </td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>

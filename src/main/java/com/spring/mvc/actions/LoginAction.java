@@ -1,4 +1,4 @@
-package actions;
+package com.spring.mvc.actions;
 
 public class LoginAction{
     //判断是否为合法用户

@@ -12,7 +12,7 @@ import java.util.Map;
 @RequestMapping("/index")
 public class IndexController {
 
-    @RequestMapping(value = "/index",method = RequestMethod.GET)
+    @RequestMapping("/index")
     public String index(Model model){
         model.addAttribute("key1","hello world");
         model.addAttribute("key2",123456);
@@ -26,7 +26,13 @@ public class IndexController {
 
 
 
-        System.out.printf("hello world");
-        return "login";
+        System.out.printf("welcome");
+        return "index";
     }
+//
+//    @RequestMapping(value = "/index",method = RequestMethod.POST)
+//    public String index1(Model model){
+//        System.out.println("login");
+//        return "login";
+//    }
 }

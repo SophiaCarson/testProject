@@ -9,7 +9,7 @@
 <body>
 <center>
     <h2>用户登录</h2>
-    <form action="LoginConf" method="post">
+    <form action="LoginController" method="get">
         <table>
             <tr>
                 <td>用户名：</td>

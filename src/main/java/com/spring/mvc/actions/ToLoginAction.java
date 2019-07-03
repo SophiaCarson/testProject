@@ -1,4 +1,4 @@
-package actions;
+package com.spring.mvc.actions;
 
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
