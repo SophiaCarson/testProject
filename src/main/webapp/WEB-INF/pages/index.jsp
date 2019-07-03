@@ -11,15 +11,12 @@
     <title>Title</title>
 </head>
 <body>
-<form action="ToLoginController" method="post">
-    <table>
+<form name="form1" action="ToLoginController" method="post">
 
-        <tr>
-            <td colspan="2">
-                <input type="submit" value="登录">
-            </td>
-        </tr>
-    </table>
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
 </form>
+
+<a HREF="/ToLoginController">!</a>
 </body>
 </html>
